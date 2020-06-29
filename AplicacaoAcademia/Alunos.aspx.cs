@@ -85,19 +85,18 @@ namespace AplicacaoAcademia
         {
             if (Grid_Alunos.SelectedValue != null)
             {
-                //cria conexão
+                
                 academiaEntities conexao = new academiaEntities();
 
-                //Obtem registro selecionado na grid
+               
                 int IDSelecionado = Convert.ToInt32(Grid_Alunos.SelectedValue.ToString());
-
-                //busca registro no banco de dados
+               
                 ALUNOS a = conexao.ALUNOS.FirstOrDefault(
                     linha => linha.ID.ToString().Equals(IDSelecionado.ToString())
                     );
 
 
-                //Alimenta campos do formulario
+              
                 Txt_Nome.Text = a.Nome;
                 Txt_CPF.Text = a.CPF;
                 Txt_Sobrenome.Text = a.Sobrenome;

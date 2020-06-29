@@ -26,7 +26,6 @@ namespace AplicacaoAcademia
             if (user != null)
             {
                 Session["usuario_logado"] = user;
-                //Login Bem Sucedido
                 Response.Redirect("Principal.aspx");
             }
         }

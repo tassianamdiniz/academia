@@ -22,7 +22,6 @@ namespace AplicacaoAcademia
         public string Quinta_Feira { get; set; }
         public string Sexta_Feira { get; set; }
     
-        public virtual SERIES SERIES1 { get; set; }
-        public virtual SERIES SERIES2 { get; set; }
+        public virtual ALUNOS ALUNOS { get; set; }
     }
 }

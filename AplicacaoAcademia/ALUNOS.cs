@@ -14,11 +14,20 @@ namespace AplicacaoAcademia
     
     public partial class ALUNOS
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public ALUNOS()
+        {
+            this.SERIES = new HashSet<SERIES>();
+        }
+    
         public int ID { get; set; }
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public string CPF { get; set; }
         public string Altura { get; set; }
         public string Peso { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SERIES> SERIES { get; set; }
     }
 }

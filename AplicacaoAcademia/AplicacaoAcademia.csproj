@@ -76,8 +76,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Alunos.aspx" />
+    <Content Include="consultaalunos.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="estilo.css" />
+    <Content Include="formulario.css" />
     <Content Include="ModelAcademia.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelAcademia.Context.cs</LastGenOutput>
@@ -102,6 +104,13 @@
     </Compile>
     <Compile Include="Alunos.aspx.designer.cs">
       <DependentUpon>Alunos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultaalunos.aspx.cs">
+      <DependentUpon>consultaalunos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultaalunos.aspx.designer.cs">
+      <DependentUpon>consultaalunos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

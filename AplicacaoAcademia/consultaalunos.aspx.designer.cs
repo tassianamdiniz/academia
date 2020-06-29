@@ -10,7 +10,7 @@
 namespace AplicacaoAcademia {
     
     
-    public partial class Principal {
+    public partial class buscavoluntario {
         
         /// <summary>
         /// Controle form1.
@@ -22,48 +22,39 @@ namespace AplicacaoAcademia {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle LblUsuarioLogado.
+        /// Controle Lbl_Consulta.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblUsuarioLogado;
+        protected global::System.Web.UI.WebControls.Label Lbl_Consulta;
         
         /// <summary>
-        /// Controle LinkButton1.
+        /// Controle Txt_Buscar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Buscar;
         
         /// <summary>
-        /// Controle Btn_Aluno.
+        /// Controle Btn_Buscar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_Aluno;
+        protected global::System.Web.UI.WebControls.Button Btn_Buscar;
         
         /// <summary>
-        /// Controle Btn_Series.
+        /// Controle Grid_Busca.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_Series;
-        
-        /// <summary>
-        /// Controle Btn_Consultar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_Consultar;
+        protected global::System.Web.UI.WebControls.GridView Grid_Busca;
     }
 }

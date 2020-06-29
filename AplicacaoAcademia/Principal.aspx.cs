@@ -24,5 +24,27 @@ namespace AplicacaoAcademia
                     LblUsuarioLogado.Text = "Bem Vindo " + usuario.Nome;
                 }
             }
+        }
+
+        protected void Btn_Aluno_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Alunos.aspx");
+        }
+
+        protected void Btn_Series_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Series.aspx");
+        }
+
+        protected void Btn_Consultar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("consultaalunos.aspx");
+        }
+
+        protected void LbSair_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Response.Redirect("Default.aspx");
+        }
     }
 }

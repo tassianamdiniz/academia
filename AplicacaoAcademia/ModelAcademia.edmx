@@ -37,14 +37,14 @@
           <Property Name="Nome" Type="varchar" MaxLength="150" Nullable="false" />
         </EntityType>
         <Association Name="FK_SERIES_ALUNOS">
-          <End Role="SERIES" Type="Self.SERIES" Multiplicity="1" />
-          <End Role="SERIES1" Type="Self.SERIES" Multiplicity="0..1" />
+          <End Role="ALUNOS" Type="Self.ALUNOS" Multiplicity="1" />
+          <End Role="SERIES" Type="Self.SERIES" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="SERIES">
+            <Principal Role="ALUNOS">
               <PropertyRef Name="ID" />
             </Principal>
-            <Dependent Role="SERIES1">
-              <PropertyRef Name="ID" />
+            <Dependent Role="SERIES">
+              <PropertyRef Name="IDAluno" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -53,8 +53,8 @@
           <EntitySet Name="SERIES" EntityType="Self.SERIES" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_SERIES_ALUNOS" Association="Self.FK_SERIES_ALUNOS">
+            <End Role="ALUNOS" EntitySet="ALUNOS" />
             <End Role="SERIES" EntitySet="SERIES" />
-            <End Role="SERIES1" EntitySet="SERIES" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -66,8 +66,8 @@
           <EntitySet Name="SERIES" EntityType="AcademiaModel.SERIES" />
           <EntitySet Name="USUARIO" EntityType="AcademiaModel.USUARIO" />
           <AssociationSet Name="FK_SERIES_ALUNOS" Association="AcademiaModel.FK_SERIES_ALUNOS">
+            <End Role="ALUNOS" EntitySet="ALUNOS" />
             <End Role="SERIES" EntitySet="SERIES" />
-            <End Role="SERIES1" EntitySet="SERIES" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="ALUNOS">
@@ -80,6 +80,7 @@
           <Property Name="CPF" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="false" />
           <Property Name="Altura" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
           <Property Name="Peso" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="SERIES" Relationship="AcademiaModel.FK_SERIES_ALUNOS" FromRole="ALUNOS" ToRole="SERIES" />
         </EntityType>
         <EntityType Name="SERIES">
           <Key>
@@ -92,8 +93,7 @@
           <Property Name="Quarta_Feira" Type="String" Nullable="false" MaxLength="150" FixedLength="true" Unicode="true" />
           <Property Name="Quinta_Feira" Type="String" Nullable="false" MaxLength="150" FixedLength="true" Unicode="true" />
           <Property Name="Sexta_Feira" Type="String" Nullable="false" MaxLength="150" FixedLength="true" Unicode="true" />
-          <NavigationProperty Name="SERIES1" Relationship="AcademiaModel.FK_SERIES_ALUNOS" FromRole="SERIES" ToRole="SERIES1" />
-          <NavigationProperty Name="SERIES2" Relationship="AcademiaModel.FK_SERIES_ALUNOS" FromRole="SERIES1" ToRole="SERIES" />
+          <NavigationProperty Name="ALUNOS" Relationship="AcademiaModel.FK_SERIES_ALUNOS" FromRole="SERIES" ToRole="ALUNOS" />
         </EntityType>
         <EntityType Name="USUARIO">
           <Key>
@@ -104,14 +104,14 @@
           <Property Name="Nome" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_SERIES_ALUNOS">
-          <End Type="AcademiaModel.SERIES" Role="SERIES" Multiplicity="1" />
-          <End Type="AcademiaModel.SERIES" Role="SERIES1" Multiplicity="0..1" />
+          <End Type="AcademiaModel.ALUNOS" Role="ALUNOS" Multiplicity="1" />
+          <End Type="AcademiaModel.SERIES" Role="SERIES" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="SERIES">
+            <Principal Role="ALUNOS">
               <PropertyRef Name="ID" />
             </Principal>
-            <Dependent Role="SERIES1">
-              <PropertyRef Name="ID" />
+            <Dependent Role="SERIES">
+              <PropertyRef Name="IDAluno" />
             </Dependent>
           </ReferentialConstraint>
         </Association>

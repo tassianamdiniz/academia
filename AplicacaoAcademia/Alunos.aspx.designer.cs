@@ -40,15 +40,6 @@ namespace AplicacaoAcademia {
         protected global::System.Web.UI.WebControls.Label Lbl_Nome;
         
         /// <summary>
-        /// Controle Txt_Nome.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Nome;
-        
-        /// <summary>
         /// Controle RequiredFieldValidator1.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace AplicacaoAcademia {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
+        /// Controle Txt_Nome.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txt_Nome;
         
         /// <summary>
         /// Controle Lbl_Sobrenome.
@@ -67,15 +67,6 @@ namespace AplicacaoAcademia {
         protected global::System.Web.UI.WebControls.Label Lbl_Sobrenome;
         
         /// <summary>
-        /// Controle Txt_Sobrenome.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Sobrenome;
-        
-        /// <summary>
         /// Controle RequiredFieldValidator2.
         /// </summary>
         /// <remarks>
@@ -83,6 +74,15 @@ namespace AplicacaoAcademia {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        
+        /// <summary>
+        /// Controle Txt_Sobrenome.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txt_Sobrenome;
         
         /// <summary>
         /// Controle Lbl_CPF.
@@ -94,15 +94,6 @@ namespace AplicacaoAcademia {
         protected global::System.Web.UI.WebControls.Label Lbl_CPF;
         
         /// <summary>
-        /// Controle Txt_CPF.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_CPF;
-        
-        /// <summary>
         /// Controle RequiredFieldValidator3.
         /// </summary>
         /// <remarks>
@@ -110,6 +101,15 @@ namespace AplicacaoAcademia {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        
+        /// <summary>
+        /// Controle Txt_CPF.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txt_CPF;
         
         /// <summary>
         /// Controle Lbl_Altura.
@@ -121,15 +121,6 @@ namespace AplicacaoAcademia {
         protected global::System.Web.UI.WebControls.Label Lbl_Altura;
         
         /// <summary>
-        /// Controle Txt_Altura.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Altura;
-        
-        /// <summary>
         /// Controle RequiredFieldValidator4.
         /// </summary>
         /// <remarks>
@@ -137,6 +128,15 @@ namespace AplicacaoAcademia {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        
+        /// <summary>
+        /// Controle Txt_Altura.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txt_Altura;
         
         /// <summary>
         /// Controle Lbl_Peso.
@@ -148,15 +148,6 @@ namespace AplicacaoAcademia {
         protected global::System.Web.UI.WebControls.Label Lbl_Peso;
         
         /// <summary>
-        /// Controle Txt_Peso.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Peso;
-        
-        /// <summary>
         /// Controle RequiredFieldValidator5.
         /// </summary>
         /// <remarks>
@@ -164,6 +155,15 @@ namespace AplicacaoAcademia {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        
+        /// <summary>
+        /// Controle Txt_Peso.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txt_Peso;
         
         /// <summary>
         /// Controle Btn_Novo.
