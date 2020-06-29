@@ -20,10 +20,15 @@ namespace AplicacaoAcademia
 			string usuario = txtUsuario.Text;
 			string senha = txtSenha.Text;
 
-			if((usuario.Equals("Admin")) && (senha.Equals("123456"))){
-				//Login bem sucedido
-				Response.Redirect("CadastroAlunos.aspx");
-			}
-		}
+            academiaEntities conexao = new academiaEntities();
+            USUARIO user = conexao.USUARIO.FirstOrDefault(linha => linha.Login.Equals(usuario) && linha.Senha.Equals(senha));
+
+            if (user != null)
+            {
+                Session["usuario_logado"] = user;
+                //Login Bem Sucedido
+                Response.Redirect("Principal.aspx");
+            }
+        }
 	}
 }
