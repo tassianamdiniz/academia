@@ -63,12 +63,12 @@
             <asp:GridView ID="Grid_Series" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <asp:BoundField DataField="Aluno" HeaderText="Aluno" />
-                    <asp:BoundField DataField="Segunda-Feira" HeaderText="Segunda-Feira" />
-                    <asp:BoundField DataField="Terca-Feira" HeaderText="Terça-Feira" />
-                    <asp:BoundField DataField="Quarta-Feira" HeaderText="Quarta-Feira" />
-                    <asp:BoundField DataField="Quinta-Feira" HeaderText="Quinta-Feira" />
-                    <asp:BoundField DataField="Sexta-Feira" HeaderText="Sexta-Feira" />
+                    <asp:BoundField DataField="ALUNOS.Nome" HeaderText="Aluno" />
+                    <asp:BoundField DataField="Segunda_Feira" HeaderText="Segunda-Feira" />
+                    <asp:BoundField DataField="Terça_Feira" HeaderText="Terça-Feira" />
+                    <asp:BoundField DataField="Quarta_Feira" HeaderText="Quarta-Feira" />
+                    <asp:BoundField DataField="Quinta_Feira" HeaderText="Quinta-Feira" />
+                    <asp:BoundField DataField="Sexta_Feira" HeaderText="Sexta-Feira" />
                 </Columns>
                 <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
                 <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />

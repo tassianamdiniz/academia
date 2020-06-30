@@ -16,7 +16,7 @@ namespace AplicacaoAcademia
                 if (Session["usuario_logado"] != null)
                 {
                     academiaEntities conexao = new academiaEntities();
-                    carregarGrid(conexao);
+                    CarregarGrid(conexao);
                     CarregarAlunos(conexao);
                 }
                 else
@@ -44,11 +44,11 @@ namespace AplicacaoAcademia
 
             conexao.SaveChanges();
 
-            carregarGrid(conexao);
+            CarregarGrid(conexao);
 
             limpar();
         }
-        private void carregarGrid(academiaEntities conexao)
+        private void CarregarGrid(academiaEntities conexao)
         {
             var lista = conexao.SERIES.ToList();
             Grid_Series.DataSource = lista;

@@ -28,6 +28,7 @@ namespace AplicacaoAcademia
         protected void Btn_Salvar_Click(object sender, EventArgs e)
         {
             academiaEntities conexao = new academiaEntities();
+
             if (Grid_Alunos.SelectedValue == null)
             {
 
